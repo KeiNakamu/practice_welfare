@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang=" ja">
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/normalize.css">
@@ -10,19 +10,26 @@
   <body>
     <header class="header clearfix">
       <a href="index.html">
-        <img src="./image/Pasted Graphic 1.png" class="logo_image">
+        <img src="./image/Pasted Graphic 1.png" class="logo_image_pc">
+        <img src="./image/Pasted Graphic 10.png" class="logo_image_sp">
       </a>
-      <nav>
-        <ul class="top_menu clearfix">
-          <li><a href="#"><h3>TOP</h3></a></li>
-          <li><a href="#"><h3>事業紹介</h3></a></li>
-          <li><a href="#"><h3>仕事を知る</h3></a></li>
-          <li><a href="#"><h3>環境を知る</h3></a></li>
-          <li><a href="#"><h3>人を知る</h3></a></li>
-          <li><a href="#"><h3>募集要項</h3></a></li>
-          <li><h3><a href="#" class="button border-radius">エントリー</a></h3></li>
-        </ul>
-      </nav>
+      <div class="nav">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+        <nav class="nav_content">
+          <ul class="nav_list top_menu clearfix">
+            <li><a href="#"><h3>TOP</h3></a></li>
+            <li><a href="#"><h3>事業紹介</h3></a></li>
+            <li><a href="#"><h3>仕事を知る</h3></a></li>
+            <li><a href="#"><h3>環境を知る</h3></a></li>
+            <li><a href="#"><h3>人を知る</h3></a></li>
+            <li><a href="#"><h3>募集要項</h3></a></li>
+            <li><h3><a href="#" class="button border-radius">エントリー</a></h3></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <article class="content">
@@ -42,7 +49,8 @@
 
       <p class="welfare-information2">
         AWESOME SEは、未経験からエンジニアに！エンジニアから起業家に！をサポートするベンチャー企業です。
-      <br>
+      </p>
+      <p class="welfare-information3">
         未経験の方には、エンジニア向けの研修と経験を積むための場所を確保。
       </p>
 
@@ -101,8 +109,8 @@
         </ul>
       </div>
 
-      <div class="training">
-        <img src="./image/Pasted Graphic 4.png">
+      <div class="training column">
+        <img src="./image/Pasted Graphic 4.png" class="training_image">
         <div class="training-comment">
           <h1>・教育カリキュラム</h1>
           <div class="">
@@ -139,7 +147,7 @@
 
     <footer class="footer">
       <a href="index.html">
-        <img src="./image/Pasted Graphic 1.png" class="footer-logo-image">
+        <img src="./image/Pasted Graphic 1.png" class="footer_logo_image">
       </a>
       <div class="footer_menu1">
         <ul>
